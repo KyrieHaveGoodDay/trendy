@@ -1078,7 +1078,7 @@ body.board--show {
 .banner_bg {
   width: 100%;
   height: 100%;
-  background-image: url(../../img/main_bg2.png);
+  background-image: url(../img/main_bg2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
