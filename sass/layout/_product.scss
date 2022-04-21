@@ -1,0 +1,113 @@
+// 後台上稿產品css，含rwd
+#Prod1stContainer1{
+    .original{
+        display: none;
+    }
+    .site_loop{
+        padding: 0;
+        li{
+            list-style: none;
+        }
+        .pd_title{
+            display: none;
+        }
+        .price{
+            display: none;
+        }
+    }
+}
+#Prod1stContainer2{
+    .original{
+        color: #000;
+        font-size: 16px;
+        text-decoration:line-through;
+    }
+    
+    
+    .site_loop{
+        // height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+        margin-bottom: 20px;
+        padding: 0;
+        margin: 0;
+        @media screen and(max-width:991px){
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media screen and(max-width:414px){
+            grid-gap: 10px;
+        }
+        li{
+            // width: 24%;
+            background: #fff;
+            // height: 370px;
+            text-align: center;
+            transition: 0.5s;
+            position: relative;
+            list-style: none;
+            border: 1px solid #ccc;
+            
+            &:hover{
+                transform: translateY(-10px);
+                border: 2px solid #000;
+                .hotline{
+                    background: #000;
+                }
+            }
+            a{
+                text-decoration: none;
+                .hotline{
+                    background: #CC0200;
+                    color: #fff;
+                    font-size: 18px;
+                    padding: 8px 3px ;
+                    margin: 5px 0;
+                    @media screen and(max-width:550px){
+                        font-size: 16px;
+                    }
+                    @media screen and(max-width:430px){
+                        font-size: 14px;
+                    }
+                }
+                .pd_title{
+                    color: #000;
+                    font-size: 16px;
+                    // border: 1px solid #000;
+                    // height: 3vw;
+                    // padding-bottom: 40px;
+                    padding: 0 10px 40px;
+                    @media screen and(max-width:550px){
+                        font-size: 14px;
+                    }
+                }
+                .price{
+                    width: 90%;
+                    color: #c90016;
+                    font-size: 26px;
+                    font-weight: bold;
+                    // border: 1px solid #000;
+                    position: absolute;
+                    bottom: 0;
+                    left: 5%;
+                    small{
+                        // font-weight: 100;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Prod1stContainer3{
+    li{
+        list-style: none;
+    }
+    .pd_title{
+        display: none;
+    }
+    .price{
+        display: none;
+    }
+}

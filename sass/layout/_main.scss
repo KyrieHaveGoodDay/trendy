@@ -1,0 +1,45 @@
+$main_border: 1px solid #000;
+
+.banner_bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/main_bg2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .mains {
+        border: $main_border;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .main_left {
+            // width: 50%;
+            // height: 100%;
+            border: $main_border;
+            text-align: center;
+            img {
+                width: 80%;
+
+                // height: 100%;
+            }
+        }
+        .main_right {
+            border: $main_border;
+            overflow: hidden;
+        }
+    }
+}
+
+.baData {
+    display: grid;
+    grid-template-columns: 40% 59%;
+    grid-gap: 10px;
+    align-items: center;
+    background: #ccc;
+    padding: 10px;
+    .swiper {
+        // overflow: hidden;
+        width: 100%;
+    }
+}
+#Prod1stContainer3 > ul > li > a > img{
+    width: 70%;
+}
